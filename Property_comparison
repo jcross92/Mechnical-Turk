@@ -49,25 +49,25 @@
 <div class="column" style="background-color:#c7e1e3;">
 <p><strong>Property 1:</strong></p>
 
-<div class="col-xs-12 col-sm-8 image"><img alt="image_url1" class="img-responsive center-block" src="${image_url1}" /></div>
+<div class="col-xs-12 col-sm-8 image"><img alt="" class="img-responsive center-block" src="${image_url1_1}" /></div>
 
-<div class="col-xs-12 col-sm-8 image"><img alt="image_url2" class="img-responsive center-block" src="${image_url2}" /></div>
+<div class="col-xs-12 col-sm-8 image"><img alt="" class="img-responsive center-block" src="${image_url1_2}" /></div>
 
-<div class="col-xs-12 col-sm-8 image"><img alt="image_url3" class="img-responsive center-block" src="${image_url3}" /></div>
+<div class="col-xs-12 col-sm-8 image"><img alt="" class="img-responsive center-block" src="${image_url1_3}" /></div>
 
-<div class="col-xs-12 col-sm-8 image"><img alt="image_url4" class="img-responsive center-block" src="${image_url4}" /></div>
+<div class="col-xs-12 col-sm-8 image"><img alt="" class="img-responsive center-block" src="${image_url1_4}" /></div>
 </div>
 
 <div class="column" style="background-color:#97c7d0;">
 <p><strong>Property 2:</strong></p>
 
-<div class="col-xs-12 col-sm-8 image"><img alt="image_url5" class="img-responsive center-block" src="${image_url5}" /></div>
+<div class="col-xs-12 col-sm-8 image"><img alt="" class="img-responsive center-block" src="${image_url2_1}" /></div>
 
-<div class="col-xs-12 col-sm-8 image"><img alt="image_url6" class="img-responsive center-block" src="${image_url6}" /></div>
+<div class="col-xs-12 col-sm-8 image"><img alt="" class="img-responsive center-block" src="${image_url2_2}" /></div>
 
-<div class="col-xs-12 col-sm-8 image"><img alt="image_url7" class="img-responsive center-block" src="${image_url7}" /></div>
+<div class="col-xs-12 col-sm-8 image"><img alt="" class="img-responsive center-block" src="${image_url2_3}" /></div>
 
-<div class="col-xs-12 col-sm-8 image"><img alt="image_url8" class="img-responsive center-block" src="${image_url8}" /></div>
+<div class="col-xs-12 col-sm-8 image"><img alt="" class="img-responsive center-block" src="${image_url2_4}" /></div>
 </div>
 </div>
 
@@ -120,7 +120,7 @@
     float: left;
     width: 50%;
     padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
+
 }
 
 /* Clear floats after the columns */
