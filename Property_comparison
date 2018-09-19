@@ -1,0 +1,137 @@
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<--Columns-->
+<style type="text/css">* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+
+<--intro-->
+<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" integrity="sha384-IS73LIqjtYesmURkDE9MXKbXqYA8rvKEp/ghicjem7Vc3mGRdQRptJSz60tvrB6+" rel="stylesheet" />
+<meta content="width=device-width,initial-scale=1" name="viewport" /><!-- Instructions -->
+<section class="container" id="TaggingOfAnImage">
+<div class="row">
+<div class="col-xs-12 col-md-12">
+<!-- Instructions -->
+<div class="panel panel-primary">
+<!-- WARNING: the ids "collapseTrigger" and "instructionBody" are being used to enable expand/collapse feature --><a class="panel-heading" href="javascript:void(0);" id="collapseTrigger"><strong>Image Tagging Instructions</strong> <span class="collapse-text">(Click to expand)</span> </a>
+<div class="panel-body" id="instructionBody">
+<div class="panel-body" id="instructionBody">
+<p>Below are two separate sets of pictures, I want you to identify if they are the same property.</p>
+
+<ul>
+	<li>Please only select &quot;No&quot; if you are certain that it is not a match, otherwise select &quot;Can&#39;t tell&quot;</li>
+	<li>Feel free to make any comments on the match (e.g. the reason you were uncertain)</li>
+	<li>The property may have been re-furnished or new equipment bought for it, so if any furnishings have changed or the property&#39;s walls have changed colour, it does not necessarily mean it is not a match</li>
+</ul>
+
+<p>Thanks for your help</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<--questions-->
+<div class="row" id="workContent">
+<div class="col-xs-12 col-sm-4 fields">
+<div class="form-group">Are these properties the same?
+<div class="radio">&nbsp;</div>
+
+<div class="radio"><label><input autocomplete="off" id="option1" name="Tag4" required="" type="radio" value="yes" /> Yes</label></div>
+
+<div class="radio"><label><input autocomplete="off" id="option2" name="Tag4" required="" type="radio" value="no" /> No</label></div>
+
+<div class="radio"><label><input autocomplete="off" id="option3" name="Tag4" required="" type="radio" value="unknown" /> Can&#39;t tell</label></div>
+
+<div class="radio">&nbsp;</div>
+
+<div class="radio">Any further info:</div>
+</div>
+</div>
+</div>
+
+<div class="col-xs-12 col-sm-8 image"><input class="form-control" id="tag3" name="tag3" required="" size="30" type="text" /></div>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+</section>
+
+<div class="row">
+<div class="column" style="background-color:#c7e1e3;">
+<p><strong>Property 1:</strong></p>
+
+<div class="col-lg-3 col-md-4 col-xs-6 thumb"><a class="thumbnail" href="#"><img alt="image1.1" class="img-thumbnail" src="${image1.1}" /> </a></div>
+
+<div class="col-lg-3 col-md-4 col-xs-6 thumb"><a class="thumbnail" href="#"><img alt="image1.2" class="img-thumbnail" src="${image1.2}" /> </a></div>
+
+<div class="col-lg-3 col-md-4 col-xs-6 thumb"><a class="thumbnail" href="#"><img alt="image1.3" class="img-thumbnail" src="${image1.3}" /> </a></div>
+</div>
+
+
+<div class="column" style="background-color:#97c7d0;">
+<p><strong>Property 2:</strong></p>
+
+<div class="col-lg-3 col-md-4 col-xs-6 thumb"><a class="thumbnail" href="#"><img alt="image2.1" class="img-thumbnail" src="${image2.1}" /> </a></div>
+
+<div class="col-lg-3 col-md-4 col-xs-6 thumb"><a class="thumbnail" href="#"><img alt="image2.2" class="img-thumbnail" src="${image2.2}" /> </a></div>
+
+<div class="col-lg-3 col-md-4 col-xs-6 thumb"><a class="thumbnail" href="#"><img alt="image2.3" class="img-thumbnail" src="${image2.3}" /> </a></div>
+
+</div>
+</div>
+
+
+<!--<div class="col-xs-12 col-sm-8 image"<img alt="image_url2.4" class="img-responsive center-block" src="${image_url2.4}" /><!--!<div</div>
+
+<div class="col-xs-12 col-sm-8 image"><img alt="image_url2.5" class="img-responsive center-block" src="https://a0.muscache.com/im/pictures/96573997/bdebef43_original.jpg?aki_policy=large" /></div>
+></div>--><!-- End Image Tagging Layout --><!-- Open internal style sheet -->
+<style type="text/css">#collapseTrigger{
+  color:#fff;
+  display: block;
+  text-decoration: none;
+}
+#submitButton{
+  white-space: normal;
+}
+.image{
+  margin-bottom: 15px;
+}
+.radio:first-of-type{
+  margin-top: -5px;
+}
+</style>
+<!-- Close internal style sheet --><!-- Please note that Bootstrap CSS/JS and JQuery are 3rd party libraries that may update their url/code at any time. Amazon Mechanical Turk (MTurk) is including these libraries as a default option for you, but is not responsible for any changes to the external libraries --><script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" integrity="sha384-s1ITto93iSMDxlp/79qhWHi+LsIi9Gx6yL+cOKDuymvihkfol83TYbLbOw+W/wv4" crossorigin="anonymous"></script><script>
+  $(document).ready(function() {
+    // Instructions expand/collapse
+    var content = $('#instructionBody');
+    var trigger = $('#collapseTrigger');
+    content.hide();
+    $('.collapse-text').text('(Click to expand)');
+    trigger.click(function(){
+      content.toggle();
+      var isVisible = content.is(':visible');
+      if(isVisible){
+        $('.collapse-text').text('(Click to collapse)');
+      }else{
+        $('.collapse-text').text('(Click to expand)');
+      }
+    });
+    // end expand/collapse
+  });
+</script>
